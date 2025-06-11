@@ -1,2 +1,2 @@
 #!/bin/bash
-x=a while [ "$x" != aa ] do y=a while [ "$y" != aa ] do [ "$x$y" != oo ] && echo "$x$y" y=$(echo $y | tr "a-y" "b-z") done x=$(echo $x | tr "a-y" "b-z") done
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
